@@ -2,7 +2,7 @@ import express from'express'
 import colors from'colors'
 import dotenv from 'dotenv'
 import morgan from 'morgan'
-import connectDb from './config/db.js';
+import connectDb from './dbconfig/db.js';
 import authRoutes from'./routes/authRoute.js'
 import categoryRoutes from './routes/categoryRoute.js'
 import productRoutes from './routes/productRoute.js'
