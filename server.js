@@ -36,18 +36,13 @@ app.use('/api/v1/product',productRoutes)
 //rest api
 //Port 
 
-<<<<<<< HEAD
-// app.use('*',function(req,res){
-// res.sendFile(path.join(__dirname,'./client/build/index.html'))
-// })
-=======
 app.get('/',(req,res)=>{
   res.send('deployed successfully')
 });
 app.use('*',function(req,res){
 res.sendFile(path.join(__dirname,'./client/build/index.html'))
 })
->>>>>>> 597067e8d8fb902c3fdf97a51598d0cbfbce0cd9
+
 
 
 
