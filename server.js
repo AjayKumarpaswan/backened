@@ -36,9 +36,9 @@ app.use('/api/v1/product',productRoutes)
 //rest api
 //Port 
 
-app.use('*',function(req,res){
-res.sendFile(path.join(__dirname,'./client/build/index.html'))
-})
+// app.use('*',function(req,res){
+// res.sendFile(path.join(__dirname,'./client/build/index.html'))
+// })
 
 
 
