@@ -95,7 +95,7 @@ message:"invalid password"
 })
 }
 //Json Web token
-const token =await JWT.sign({_id:user.id},process.env.JWT_SECRET,{expiresIn:"7d",});
+const token =await JWT.sign({_id:user.id},process.env.JWT_SECRET,{expiresIn:"365d",});
 
 res.status(200).send({
 success:true,

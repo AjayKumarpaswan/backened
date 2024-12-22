@@ -40,7 +40,7 @@ router.get('/orders',requireSignIn,getOrdersController)
 
 
 //get all orders
-router.get("/all-orders",isAdmin,requireSignIn,getAllOrdersController)
+router.get("/all-orders",requireSignIn,isAdmin,getAllOrdersController)
 
 router.put("/order-status/:orderId",requireSignIn,isAdmin,orderStatusController)
 export default router;
